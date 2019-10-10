@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B1F49DF-F98D-4439-9ECE-8866818F0319}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WmsView</RootNamespace>
+    <AssemblyName>WmsView</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAddAreaPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddAreaPoint.Designer.cs">
+      <DependentUpon>FrmAddAreaPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddContainer.Designer.cs">
+      <DependentUpon>FrmAddContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddArea.Designer.cs">
+      <DependentUpon>FrmAddArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddMateriel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddMateriel.Designer.cs">
+      <DependentUpon>FrmAddMateriel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddPointContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddPointContainer.Designer.cs">
+      <DependentUpon>FrmAddPointContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddProperty.Designer.cs">
+      <DependentUpon>FrmAddProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddWare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddWare.Designer.cs">
+      <DependentUpon>FrmAddWare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetContainer.Designer.cs">
+      <DependentUpon>FrmSetContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetMateriel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetMateriel.Designer.cs">
+      <DependentUpon>FrmSetMateriel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetPoint.Designer.cs">
+      <DependentUpon>FrmSetPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetProperty.Designer.cs">
+      <DependentUpon>FrmSetProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddAreaPoint.resx">
+      <DependentUpon>FrmAddAreaPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddContainer.resx">
+      <DependentUpon>FrmAddContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddArea.resx">
+      <DependentUpon>FrmAddArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddMateriel.resx">
+      <DependentUpon>FrmAddMateriel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddPointContainer.resx">
+      <DependentUpon>FrmAddPointContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddProperty.resx">
+      <DependentUpon>FrmAddProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddWare.resx">
+      <DependentUpon>FrmAddWare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetContainer.resx">
+      <DependentUpon>FrmSetContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetMateriel.resx">
+      <DependentUpon>FrmSetMateriel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetPoint.resx">
+      <DependentUpon>FrmSetPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetProperty.resx">
+      <DependentUpon>FrmSetProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WmsDemo\WmsDemo.csproj">
+      <Project>{c7c2d57e-e07a-4c2c-bcde-fa846680009b}</Project>
+      <Name>WmsDemo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
